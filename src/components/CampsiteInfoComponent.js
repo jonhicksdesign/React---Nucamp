@@ -11,7 +11,7 @@ class CampsiteInfo extends Component {
                     <CardBody>
                         <CardTitle>{campsite.name}</CardTitle>
                         <CardText>{campsite.description}</CardText>
-                        <CardText style={{ color: 'gray', fontStyle: 'italic', fontWeight: '100' }}>Elevation - {campsite.elevation} feet</CardText>
+                        <CardText style={{ color: 'gray', fontStyle: 'italic', fontWeight: '100' }}>Elevation - {campsite.elevation} feet above sea level</CardText>
                     </CardBody>
                 </Card>
             </div>
