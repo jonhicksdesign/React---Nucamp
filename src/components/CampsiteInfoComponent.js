@@ -11,6 +11,7 @@ class CampsiteInfo extends Component {
                     <CardBody>
                         <CardTitle>{campsite.name}</CardTitle>
                         <CardText>{campsite.description}</CardText>
+                        <CardText style={{ color: 'gray', fontStyle: 'italic', fontWeight: '100' }}>Elevation - {campsite.elevation} feet</CardText>
                     </CardBody>
                 </Card>
             </div>
@@ -26,7 +27,7 @@ class CampsiteInfo extends Component {
                         comments.map(comment => {
                             return (
                                 <div key={comment.id}>
-                                    <p>
+                                    <p style={{ fontStyle: 'italic' }}>
                                         {comment.text}<br />
                                         -- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
                                     </p>
